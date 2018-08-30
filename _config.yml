@@ -1,7 +1,7 @@
 url: https://christophera.github.io/jekyll-remote_theme-test/
 baseurl: /jekyll-remote_theme-test/
 
-remote_theme: "linaro-website/jumbo-jekyll-theme/"
+remote_theme: "qwtel/hydejack"
 
 plugins:
   - jekyll-remote-theme
