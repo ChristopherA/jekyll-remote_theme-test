@@ -1,3 +1,7 @@
 remote_theme: "mmistakes/minimal-mistakes"
 url: https://christophera.github.io/jekyll-remote_theme-test/
 baseurl: /jekyll-remote_theme-test/
+
+plugins:
+  - jekyll-remote-theme
+
