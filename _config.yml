@@ -1,9 +1,7 @@
 url: https://christophera.github.io/jekyll-remote_theme-test/
 baseurl: /jekyll-remote_theme-test/
 
-# Remote_Theme: Minimal Mistakes https://github.com/mmistakes/minimal-mistakes
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "plum" # "air", "aqua", "contrast", "dark", "default", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme: "daviddarnes/alembic"
 
 plugins:
   - jekyll-remote-theme
