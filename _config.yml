@@ -2,7 +2,6 @@ url: https://christophera.github.io/jekyll-remote_theme-test/
 baseurl: /jekyll-remote_theme-test/
 
 #remote_theme: "qwtel/hydejack"
-remote_theme: "qwtel/hydejack-starter-kit"
 
 plugins:
   - jekyll-remote-theme
