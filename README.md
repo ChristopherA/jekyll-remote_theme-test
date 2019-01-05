@@ -4,8 +4,6 @@ hide_description: true
 permalink: /index.html
 ---
 
-## #SmartCustody
-
 *"The use of advanced cryptographic tools to improve the care, maintenance, control, and protection of digital assets."*
 Our goals:
 
