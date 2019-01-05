@@ -5,3 +5,32 @@ remote_theme: "qwtel/hydejack"
 
 plugins:
   - jekyll-remote-theme
+
+# The title of your blog. Used in the sidebar and the browser tab.
+title:                 Smart Custody
+
+# A short description (~150 chars) of the page used for the meta description tag.
+# Can use markdown, but no more than one paragraph (enforced by `>`)
+description:           “Smart Custody” is the use of advanced cryptographic tools to improve the *care*, *maintenance*, *control*, and *protection* of digital assets. A project of Blockchain Commons.
+
+# A shorter description for the sidebar.
+tagline:               “Smart Custody” is the use of advanced cryptographic tools to improve the *care*, *maintenance*, *control*, and *protection* of digital assets. A project of [Blockchain Commons](https://www.BlockchainCommons.com)
+
+# A list of keywords for your blog
+keywords:              [smart, custody, digital, assets, smartcontract, smartcontracts, care, maintenance, protection, control, protection, bitcoin, ethereum]
+
+# A (square) logo for your site.
+# If provided, it will be shown at the top of the sidebar.
+# It also used by the `jekyll-seo-tag` plugin.
+logo:                  assets/icons/transparent-lock-icon.svg
+
+# This should be the same author as first entry in `_data/authors.yml`.
+author:                 Blockchain Commons
+#  name:                <firstname> <lastname>
+email:                  <info@BlockchainCommons.com>
+
+# Used by `jekyll-seo-tag`:
+twitter:             SmartCustody
+
+# This text will appear in a `<small>` tag in the footer of every page.
+copyright:           © 2019. All rights reserved.
