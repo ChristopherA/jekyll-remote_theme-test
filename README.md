@@ -1,4 +1,5 @@
 ---
+title: #SmartCustody
 cover: false
 hide_description: true
 permalink: /index.html
