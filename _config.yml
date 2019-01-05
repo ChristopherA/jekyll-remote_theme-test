@@ -33,7 +33,7 @@ copyright:           © 2019. All rights reserved.
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  assets/icons/transparent-lock-icon.svg
+logo:                  transparent-lock-icon.svg
 
 # Sidebar image and theme color of the site.
 accent_image:          sidebar-bg.jpg
