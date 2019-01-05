@@ -66,9 +66,9 @@ font:                  Noto Sans, Helvetica, Arial, sans-serif
 # To change font-weight, see _sass/variables.scss
 font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 
-defaults:
-  - scope:
-      path: posts.md
-    values:
-      menu: true
-      order: 1
+#defaults:
+#  - scope:
+#      path: posts.md
+#    values:
+#      menu: true
+#      order: 1
