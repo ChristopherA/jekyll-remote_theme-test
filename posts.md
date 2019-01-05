@@ -1,5 +1,7 @@
 ---
-layout: list
-title: Posts
-description: Posts about #SmartCustody
+layout: blog
+title: Blog Posts
+description: Blog Posts about #SmartCustody
+menu: true
+order: 1
 ---
