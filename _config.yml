@@ -1,7 +1,7 @@
 url: https://christophera.github.io/jekyll-remote_theme-test/
 baseurl: /jekyll-remote_theme-test/
 
-remote_theme: "mmistakes/minimal-mistakes@4.14.2"
+remote_theme: "qwtel/hydejack"
 
 plugins:
   - jekyll-remote-theme
