@@ -1,5 +1,6 @@
 ---
 title: "#SmartCustody"
+layout: home
 permalink: /index.html
 ---
 
