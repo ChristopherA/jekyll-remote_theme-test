@@ -1,11 +1,12 @@
 ---
-title: #SmartCustody
+title: "#SmartCustody"
 cover: false
 hide_description: true
 permalink: /index.html
 ---
 
 *"The use of advanced cryptographic tools to improve the care, maintenance, control, and protection of digital assets."*
+
 Our goals:
 
 1. Raise the bar on best practices for digital-asset custodianship by building a greater understanding of different custody use cases, risk models, and adversary analyses.
