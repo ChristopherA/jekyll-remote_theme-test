@@ -3,18 +3,83 @@ baseurl: /jekyll-remote_theme-test/
 
 remote_theme: "qwtel/hydejack"
 
-plugins:
-  - jekyll-remote-theme
-  - jekyll-default-layout
-  - jekyll-feed
-  - jekyll-optional-front-matter
-  - jekyll-paginate
-  - jekyll-readme-index
-  - jekyll-redirect-from
-  - jekyll-relative-links
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-titles-from-headings
+plugins: 
+
+# default Github plugins, can't be turned off as per https://help.github.com/articles/configuring-jekyll-plugins/ 
+# and are merged into _config.yml at Github by https://github.com/github/pages-gem/ and gem 'github-pages', group: :jekyll_plugins
+  - jekyll-coffeescript # 1.1.1
+  - jekyll-gist #1.5.0
+  - jekyll-github-metadata # 2.9.4
+  - jekyll-paginate #1.1.0
+  - jekyll-relative-links #0.5.3
+  - jekyll-optional-front-matter #0.3.0
+  - jekyll-readme-index #0.2.0
+  - jekyll-default-layout #0.1.4
+  - jekyll-titles-from-headings #0.5.1
+
+# Optional Github plugins, can be added as per https://help.github.com/articles/configuring-jekyll-plugins/
+
+  - jekyll-feed # 0.11.0 
+  - jekyll-redirect-from # 0.14.0
+  - jekyll-seo-tag # 2.5.0 
+  - jekyll-sitemap # 1.2.0
+  - jekyll-avatar # 0.6.0
+  - jemoji # 0.10.1 
+  - jekyll-mentions # 1.4.1
+  - jekyll-include-cache # not listed in https://pages.github.com/versions/
+
+# Important option Github plugins listed in https://pages.github.com/versions/
+# but not listed in https://help.github.com/articles/configuring-jekyll-plugins/
+  - jekyll-remote-theme	# 0.3.1
+  
+# Github directly supported themes as per https://pages.github.com/versions/
+# If you use these, it can be worth looking at them for theme specific features
+# The default theme used is pages-themes/primer if you don't pick a theme
+#    - jekyll-theme-primer	# 0.5.3 https://github.com/pages-themes/primer 
+#    - jekyll-theme-architect	0.1.1 https://github.com/pages-themes/architect
+#    - jekyll-theme-cayman	# 0.1.1 https://github.com/pages-themes/cayman
+#    - jekyll-theme-dinky	# 0.1.1 https://github.com/pages-themes/dinky
+#    - jekyll-theme-hacker	# 0.1.1 https://github.com/pages-themes/hacker
+#    - jekyll-theme-leap-day	# 0.1.1 https://github.com/pages-themes/leap-day
+#    - jekyll-theme-merlot	# 0.1.1 https://github.com/pages-themes/merlot
+#    - jekyll-theme-midnight	# 0.1.1 https://github.com/pages-themes/midnight
+#    - jekyll-theme-minimal # 0.1.1 https://github.com/pages-themes/minimal
+#    - jekyll-theme-modernist	# 0.1.1 https://github.com/pages-themes/modernist
+#    - jekyll-theme-slate	# 0.1.1 https://github.com/pages-themes/slate
+#    - jekyll-theme-tactile	# 0.1.1 https://github.com/pages-themes/tactile
+#    - jekyll-theme-time-machine # 0.1.1 https://github.com/pages-themes/time-machine
+# Other themes directly supported
+#    - jekyll-swiss	# 0.4.0 https://broccolini.net/swiss/
+#    - minima	# 2.5.0 https://github.com/jekyll/minima
+
+# These are listed as supported by Github https://pages.github.com/versions/
+# but are probably used as part of Jekyll, not used as part plugins for _config.yml
+# HOWEVER, they are a number of useful _config.yml configurations and other features
+# enabled by them, so you might want to look at the docs.
+#   - liquid # 4.0.0 this is the templating language that using braces. Slightly out of date from, Jekyl docs at https://jekyllrb.com/docs/liquid/
+#   - rouge	# 2.2.1 https://github.com/jneen/rouge Syntax Highlighter
+#   - kramdown	# 1.17.0 https://github.com/gettalong/kramdown
+#   - jekyll-commonmark-ghpages	# 0.1.5 https://github.com/github/jekyll-commonmark-ghpages
+
+
+# All others listed as supported by Github https://pages.github.com/versions/
+# but are probably used as part of Jekyll, not used as part plugins for _config.yml
+#   - ruby # 2.5.3 Github Jeckyl uses Ruby 2.5.3
+#   - jekyll # 3.7.4 Github Jeckyl https://github.com/jekyll/jekyll
+#   - github-pages # 193 https://rubygems.org/gems/github-pages/versions/193 Ruby Gem for local support of running github pages
+#   - nokogiri # 1.8.4 https://github.com/sparklemotion/nokogiri Ruby Gem for HTML, XML, SAX, and Reader parsers with XPath and CSS selector support
+#   - safe_yaml	# 1.0.4 https://github.com/dtao/safe_yaml Ruby Gem for parsing SAML
+#   - sass	# 3.5.7 https://github.com/sass/sass
+#   - activesupport	4.2.10 # ??
+#   - github-pages-health-check	# 1.8.1 https://github.com/pages-health-check/pages-health-check.github.io
+#   - html-pipeline	# 2.8.4 https://github.com/jch/html-pipeline
+#   - jekyll-sass-converter	# 1.5.2 https://github.com/jekyll/jekyll-sass-converter
+#   - listen # 3.1.5 https://github.com/guard/listen
+
+
+
+# You can use Rouge syntax highlighting directly in github pages see https://sacha.me/articles/jekyll-rouge/
+
 
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 Smart Custody
