@@ -1,7 +1,7 @@
 url: https://christophera.github.io/jekyll-remote_theme-test/
 baseurl: /jekyll-remote_theme-test/
 
-remote_theme: BlockchainCommons/About-Blockchain-Commons-Presentation
+remote_theme: emilbaehr/automatic-app-landing-page
 
 plugins: 
 
