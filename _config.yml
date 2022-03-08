@@ -1,7 +1,7 @@
 url: https://christophera.github.io/jekyll-remote_theme-test/
 baseurl: /jekyll-remote_theme-test/
 
-remote_theme: remote_theme: BDHU/minimalist
+remote_theme: BDHU/minimalist
 
 plugins: 
 
