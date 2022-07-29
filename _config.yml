@@ -2,3 +2,21 @@ url: https://christophera.github.io/jekyll-remote_theme-test/
 baseurl: /jekyll-remote_theme-test/
 
 remote_theme: tedivm/jekyll-theme-portfolio
+
+title: Jekyll Remote Theme Test
+author: Christopher Allen
+email: your-email@domain.com
+description: >
+  An awesome description
+
+
+# Header Links - all optional. If set these create header links.
+homepage: https://christophera.github.io/jekyll-remote_theme-test/
+twitter_username: ChristopherA
+github_username: ChristopherA
+linkedin_username: ChristopherA
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-remote-theme # Lets us test remote themes locally.
