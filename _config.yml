@@ -3,137 +3,72 @@ baseurl: /jekyll-remote_theme-test/
 
 remote_theme: wowthemesnet/mediumish-theme-jekyll
 
-plugins: 
+# Site
+name: "Mediumish"
+title: "Mediumish"
+description: "Jekyll template, Medium styled, free for bloggers."
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+google_analytics: 'UA-46278016-1'
+include: ["_pages"]
+permalink: /:title/
 
-# default Github plugins, can't be turned off as per https://help.github.com/articles/configuring-jekyll-plugins/ 
-# and are merged into _config.yml at Github by https://github.com/github/pages-gem/ and gem 'github-pages', group: :jekyll_plugins
-  - jekyll-coffeescript # 1.1.1
-  - jekyll-gist #1.5.0
-  - jekyll-github-metadata # 2.9.4
-  - jekyll-paginate #1.1.0
-  - jekyll-relative-links #0.5.3
-  - jekyll-optional-front-matter #0.3.0
-  - jekyll-readme-index #0.2.0
-  - jekyll-default-layout #0.1.4
-  - jekyll-titles-from-headings #0.5.1
+# Authors
+authors:
+  sal:
+    name: Sal
+    display_name: Sal
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net
+    twitter: https://twitter.com/wowthemesnet
+    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+  john:
+    name: John
+    display_name: John    
+    avatar: 'assets/images/avatar.png'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net
+    twitter: https://twitter.com/wowthemesnet
+    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
 
-# Optional Github plugins, can be added as per https://help.github.com/articles/configuring-jekyll-plugins/
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
 
-  - jekyll-feed # 0.11.0 
-  - jekyll-redirect-from # 0.14.0
-  - jekyll-seo-tag # 2.5.0 
-  - jekyll-sitemap # 1.2.0
-  - jekyll-avatar # 0.6.0
-  - jemoji # 0.10.1 
-  - jekyll-mentions # 1.4.1
-  - jekyll-include-cache # not listed in https://pages.github.com/versions/
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
-# Important option Github plugins listed in https://pages.github.com/versions/
-# but not listed in https://help.github.com/articles/configuring-jekyll-plugins/
-  - jekyll-remote-theme	# 0.3.1
-  
-# Github directly supported themes as per https://pages.github.com/versions/
-# If you use these, it can be worth looking at them for theme specific features
-# The default theme used is pages-themes/primer if you don't pick a theme
-#    - jekyll-theme-primer	# 0.5.3 https://github.com/pages-themes/primer 
-#    - jekyll-theme-architect	0.1.1 https://github.com/pages-themes/architect
-#    - jekyll-theme-cayman	# 0.1.1 https://github.com/pages-themes/cayman
-#    - jekyll-theme-dinky	# 0.1.1 https://github.com/pages-themes/dinky
-#    - jekyll-theme-hacker	# 0.1.1 https://github.com/pages-themes/hacker
-#    - jekyll-theme-leap-day	# 0.1.1 https://github.com/pages-themes/leap-day
-#    - jekyll-theme-merlot	# 0.1.1 https://github.com/pages-themes/merlot
-#    - jekyll-theme-midnight	# 0.1.1 https://github.com/pages-themes/midnight
-#    - jekyll-theme-minimal # 0.1.1 https://github.com/pages-themes/minimal
-#    - jekyll-theme-modernist	# 0.1.1 https://github.com/pages-themes/modernist
-#    - jekyll-theme-slate	# 0.1.1 https://github.com/pages-themes/slate
-#    - jekyll-theme-tactile	# 0.1.1 https://github.com/pages-themes/tactile
-#    - jekyll-theme-time-machine # 0.1.1 https://github.com/pages-themes/time-machine
-# Other themes directly supported
-#    - jekyll-swiss	# 0.4.0 https://broccolini.net/swiss/
-#    - minima	# 2.5.0 https://github.com/jekyll/minima
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
 
-# These are listed as supported by Github https://pages.github.com/versions/
-# but are probably used as part of Jekyll, not used as part plugins for _config.yml
-# HOWEVER, they are a number of useful _config.yml configurations and other features
-# enabled by them, so you might want to look at the docs.
-#   - liquid # 4.0.0 this is the templating language that using braces. Slightly out of date from, Jekyl docs at https://jekyllrb.com/docs/liquid/
-#   - rouge	# 2.2.1 https://github.com/jneen/rouge Syntax Highlighter
-#   - kramdown	# 1.17.0 https://github.com/gettalong/kramdown
-#   - jekyll-commonmark-ghpages	# 0.1.5 https://github.com/github/jekyll-commonmark-ghpages
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
 
-
-# All others listed as supported by Github https://pages.github.com/versions/
-# but are probably used as part of Jekyll, not used as part plugins for _config.yml
-#   - ruby # 2.5.3 Github Jeckyl uses Ruby 2.5.3
-#   - jekyll # 3.7.4 Github Jeckyl https://github.com/jekyll/jekyll
-#   - github-pages # 193 https://rubygems.org/gems/github-pages/versions/193 Ruby Gem for local support of running github pages
-#   - nokogiri # 1.8.4 https://github.com/sparklemotion/nokogiri Ruby Gem for HTML, XML, SAX, and Reader parsers with XPath and CSS selector support
-#   - safe_yaml	# 1.0.4 https://github.com/dtao/safe_yaml Ruby Gem for parsing SAML
-#   - sass	# 3.5.7 https://github.com/sass/sass
-#   - activesupport	4.2.10 # ??
-#   - github-pages-health-check	# 1.8.1 https://github.com/pages-health-check/pages-health-check.github.io
-#   - html-pipeline	# 2.8.4 https://github.com/jch/html-pipeline
-#   - jekyll-sass-converter	# 1.5.2 https://github.com/jekyll/jekyll-sass-converter
-#   - listen # 3.1.5 https://github.com/guard/listen
-
-
-
-# You can use Rouge syntax highlighting directly in github pages see https://sacha.me/articles/jekyll-rouge/
-
-
-# The title of your blog. Used in the sidebar and the browser tab.
-title:                 Smart Custody
-
-# A short description (~150 chars) of the page used for the meta description tag.
-# Can use markdown, but no more than one paragraph (enforced by `>`)
-description:           “Smart Custody” is the use of advanced cryptographic tools to improve the *care*, *maintenance*, *control*, and *protection* of digital assets. A project of Blockchain Commons.
-
-# A shorter description for the sidebar.
-tagline:               “Smart Custody” is the use of advanced cryptographic tools to improve the *care*, *maintenance*, *control*, and *protection* of digital assets. A project of [Blockchain Commons](https://www.BlockchainCommons.com)
-
-# A list of keywords for your blog
-keywords:              [smart, custody, digital, assets, smartcontract, smartcontracts, care, maintenance, protection, control, protection, bitcoin, ethereum]
-
-# This should be the same author as first entry in `_data/authors.yml`.
-author:                 Blockchain Commons
-#  name:                <firstname> <lastname>
-email:                  <info@BlockchainCommons.com>
-
-# Used by `jekyll-seo-tag`:
-twitter:             SmartCustody
-
-# This text will appear in a `<small>` tag in the footer of every page.
-copyright:           © 2019. All rights reserved.
-
-# A (square) logo for your site.
-# If provided, it will be shown at the top of the sidebar.
-# It also used by the `jekyll-seo-tag` plugin.
-logo:                  transparent-lock-icon.svg
-
-# Sidebar image and theme color of the site.
-accent_image:          sidebar-bg.jpg
-accent_color:          rgb(79,177,186)
-
-# This is used for the `theme-color` meta tag,
-# which changes the background color of the browser UI in certain browsers.
-# Defaults to `accent_color`.
-theme_color:           rgb(25,55,71)
-
-# The string encoding which fonts to fetch from Google Fonts.
-# See: <https://hydejack.com/docs/configuration/>
-google_fonts:          Roboto+Slab:400|Noto+Sans:400,400i,700,700i
-
-# The text font. Expects a string that is a valid CSS font-family value.
-# To change font-weight, see _sass/variables.scss
-font:                  Noto Sans, Helvetica, Arial, sans-serif
-
-# The font used for headings. Expects a string that is a valid CSS font-family value.
-# To change font-weight, see _sass/variables.scss
-font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
-
-#defaults:
-#  - scope:
-#      path: posts.md
-#    values:
-#      menu: true
-#      order: 1
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
